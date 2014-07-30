@@ -1,0 +1,12 @@
+
+input[type=text]{
+  color: black;
+  background-color: orange;
+  border: blue;
+}
+
+textarea{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}

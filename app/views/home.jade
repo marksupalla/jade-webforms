@@ -1,0 +1,40 @@
+doctype html
+
+html
+  head
+    meta(charset='utf-8')
+    title Jade/Wed Forms
+    link(rel='stylesheet', href='/css/style.css')
+    h1= Math.pow(8,2)
+    - var x = 3, y = 2
+    h2= x * y
+    - var colors = ['blue', 'green', 'yellow', 'pink']
+    each color in colors
+      if color === 'green'
+        h1 i love green
+      else 
+        h2 no green
+      .color(style='color:#{color};')= color
+
+  body
+    h1.a.b.c#d.e hello jade
+    #x hi
+      #y hi 
+        #z hi 
+          .a hi 
+            .b hi
+              .c  hihi
+    h2 this is an h2
+    section
+      article
+        h3 hey h3
+        p p1
+        p p2
+        p p3
+          | this is text
+          span more text
+          | final text
+          span hello world
+
+
+    

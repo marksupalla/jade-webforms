@@ -1,0 +1,18 @@
+
+doctype
+html
+  head
+    
+    meta(charset='utf-8')
+    title Boxes
+    link(rel='stylesheet', href='/css/style2.css')
+  body
+    h1 Boxes
+    form(method='post', action='/boxes')
+      input(type='text', name='b', placeholder='Any Number', autofocus=true)
+      input(type='text', name='l', placeholder='5-10')
+      input(type='text', name='w', placeholder='23-31')
+      label = Please enter a color:
+      textarea(name= 'c')
+      button Generate Boxes
+
